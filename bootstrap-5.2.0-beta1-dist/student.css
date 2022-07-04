@@ -37,17 +37,12 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
-.sidebar ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .sidebar i {
     color: #ffffff;
 }
 
 .sidebar {
-    background-color: #7cf242;
+    background-color: #ff0000;
     grid-area: sidebar;
 }
 

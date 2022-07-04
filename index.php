@@ -17,23 +17,26 @@
         <img src="images/download.jpg" alt="">
     </div>
     <div class="sidebar ">
-        <nav>
-            <ul>
-                <li>
-                    <a href=""> <span> <i class="fa fa-group "></i></span></a>
-                    <span>Student </span>
-                </li>
-                <li>
-                    <a href=""><span> <i class="fa fa-folder-open"></i> </span></a>
-                    <span>Folder</span>
-                </li>
 
-                <li>
-                    <a href=""> <i class="fa fa-graduation-cap"></i></a>
-                    <span>Compus </span>
-                </li>
-            </ul>
-        </nav>
+        <ul>
+            <li>
+               <a href="index.php">
+            <span><i class="fa fa-group "></i></span>
+               </a> 
+                <span> <a href="student.php">Student </a> </span>
+
+            </li>
+            <li>
+                 <i class="fa fa-folder-open"></i> </span>
+                 <span>Folder</span>
+            </li>
+
+            <li>
+                 <i class="fa fa-graduation-cap"></i>
+                <span>Compus </span>
+            </li>
+        </ul>
+
 
     </div>
     <main>
@@ -53,8 +56,12 @@
                         <Span>Student</Span>
                     </div>
                     <div class="card-body shadow">
-                        <span> <i class="fa fa-group fa-4x"></i></span>
-                        <span class="float-right"></span>
+                        <span> <i class="fa fa-group fa-4x">  </i></span>
+                        <span class="float-end">00</span>
+
+                    </div>
+                    <div class="footer">
+
                     </div>
 
                 </div>
@@ -63,16 +70,16 @@
                         <span>Available courses</span>
                     </div>
                     <div class="card-body shadow">
-                        <span> <i class="fa fa-folder-open fa-4x"> </i></span>
+                        <span> <i class="fa fa-folder-open fa-4x"> </i></span> <span class="float-end">00 </span>
                     </div>
                 </div>
                 <div class="col-lg-3 p-3">
                     <div class="card-header bg-dark text-white text-center shadow">
                         <span>Compuses</span>
                     </div>
-                    <div class="body shadow">
+                    <div class="card- body shadow">
                         <span>  <i class="fa fa-graduation-cap fa-4x"></i></span>
-                        <span class="float-right"></span>
+                        <span class="float-end">00</span>
                     </div>
                 </div>
 
@@ -82,13 +89,16 @@
                     </div>
                     <div class="card-body shadow">
                         <span> <i class="fa fa-user fa-4x"></i></span>
+                        <span class="float-end">00</span>
+
                     </div>
+
                 </div>
             </div>
             <div class="row p-3">
                 <div class="col-lg-12">
                     <div class="card-header shadow bg-dark text-center text-white">
-                        <span>Student Analyst</span>
+                        <span>Student Analysis</span>
 
                     </div>
                     <div class="body shadow">
