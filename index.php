@@ -1,43 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-</head>
+<?php require_once('includes/headers.php') ?>
 
 <body>
-
-    <div class="header">
-        <img src="images/download.jpg" alt="">
-    </div>
-    <div class="sidebar ">
-
-        <ul>
-            <li>
-               <a href="index.php">
-            <span><i class="fa fa-group "></i></span>
-               </a> 
-                <span> <a href="student.php">Student </a> </span>
-
-            </li>
-            <li>
-                 <i class="fa fa-folder-open"></i> </span>
-                 <span>Folder</span>
-            </li>
-
-            <li>
-                 <i class="fa fa-graduation-cap"></i>
-                <span>Compus </span>
-            </li>
-        </ul>
+<?php include('includes/nav.php') ?>
 
 
+ <div class="sidebar ">
+ <?php include("includes/sidebar.php")?>
     </div>
     <main>
         <div class="container">
@@ -108,9 +79,7 @@
             </div>
         </div>
     </main>
-
-    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
-    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+<?php require('includes/script.php')?>
 </body>
 
 </html>

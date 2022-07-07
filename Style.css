@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-color: #ff4500;
+    background-color: #f57e20;
     grid-area: header;
     width: 100%;
     height: 80px;
@@ -47,7 +47,7 @@ body {
 }
 
 .sidebar {
-    background-color: #7cf242;
+    background-color: #07b00d;
     grid-area: sidebar;
 }
 

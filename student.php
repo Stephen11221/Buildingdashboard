@@ -1,49 +1,19 @@
 <?php
-$server='localhost';
-$username='root';
-$password="";
-$database='zalego';
-
-$conn =mysqli_connect($server, $username,$password,$database);
-
+require_once('logics/dbconection.php');
  $sql=mysqli_query($conn, "SELECT  * FROM enrollment");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
-</head>
+<?php require_once('includes/headers.php') ?>
 
 <body>
 
-    <div class="header">
-        <img src="images/download.jpg" alt="">
-    </div>
+<?php include('includes/nav.php') ?>
+
     <div class="sidebar ">
-
-        <ul>
-            <li>
-                <a href="student.php"> <span> <i class="fa fa-group "></i></span></a>
-                <span>Student </span>
-            </li>
-            <li>
-                <a href=""><span> <i class="fa fa-folder-open"></i> </span></a>
-                <span>Folder</span>
-            </li>
-
-            <li>
-                <a href=""> <i class="fa fa-graduation-cap"></i></a>
-                <span>Compus </span>
-            </li>
-        </ul>
-
+    <?php include("includes/sidebar.php") ?>
+         
 
     </div>
     <main>
@@ -80,7 +50,7 @@ $conn =mysqli_connect($server, $username,$password,$database);
                     <td><?php echo $fetchenrollmentrecords['creates_at'] ?></td>
                     <td>
                                 
-                        <a href="#" class=" btn btn-primary btn-sm">
+                        <a href="edit-enrollment.php?id=<?php echo $fetchenrollmentrecords['no'] ?>" class=" btn btn-primary btn-sm">
                             <i class="fa fa-edit"></i>
                         </a>
                         <a href="#" class=" btn btn-success btn-sm">
