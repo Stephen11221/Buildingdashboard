@@ -16,14 +16,14 @@ require_once('logics/dbconection.php');
          
 
     </div>
-    <main>
+    <main class="main-content">
         <div class="card-header shadow bg-dark text-center mt-1 text-white">
             <span> <span>  <i class="fa fa-group text-white"></i></span> Student </span>
 
         </div>
-        <div class="card-body shadow ">
+        <div class="card-body shadow  pt-3 ">
 
-            <table class="table table-bordered border-dark table-responsive table-hover table-stripe">
+            <table class="table table-bordered border-dark table-responsive table-hover table-stripe" style="font-size:12px">
                 <tr>
                     <th>ID</th>
                     <th>Fulll Name</th>
@@ -52,11 +52,11 @@ require_once('logics/dbconection.php');
                                 
                         <a href="edit-enrollment.php?id=<?php echo $fetchenrollmentrecords['no'] ?>" class=" btn btn-primary btn-sm">
                             <i class="fa fa-edit"></i>
-                        </a>
-                        <a href="#" class=" btn btn-success btn-sm">
+                        </a>    
+                        <a href="view-enrollment.php?id=<?php echo $fetchenrollmentrecords['no']?>" class=" btn btn-success btn-sm">
                             <i class="fa fa-eye"></i>
                         </a>
-                        <a href="#" class=" btn btn-danger btn-sm">
+                        <a href="delete-enrollment.php?id=<?php echo $fetchenrollmentrecords['no']?>" class=" btn btn-danger btn-sm">
                             <i class="fa fa-trash "></i>
                         </a>
                 </td>

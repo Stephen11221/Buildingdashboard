@@ -47,7 +47,7 @@
         <input type="password" class="form-control">
 
 
-        <button type="submit" class="btn btn-primary  "> Submit</button>
+        <a href="index.php" class="btn btn-success">Submit</a>
 
         <p>Have no account? Sign up <a href="">here</a></p>
 
