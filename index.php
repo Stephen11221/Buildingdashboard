@@ -17,7 +17,7 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
 
 
  <div class="sidebar ">
- <?php include("includes/sidebar.php")?>
+ <?php include_once("includes/sidebar.php")?>
     </div>
     <main class="main-content">
         <div class="container">
@@ -36,7 +36,7 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
                         <span>students</span>
                     </div>
                     <div class="card-body shadow">
-                        <span> <i class="fa fa-group fa-4x">  </i></span>
+                        <span> <i class="fa fa-group fa-4x text-dark">  </i></span>
                         <span class="float-end badge bg-dark rounded-pill"><?php echo $countallstudents?></span>
 
                     </div>
@@ -50,7 +50,7 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
                         <span>Available courses</span>
                     </div>
                     <div class="card-body shadow">
-                        <span> <i class="fa fa-folder-open fa-4x"> </i></span> <span class="float-end badge bg-dark rounded-pill"><?php echo $countallfemale?></span>
+                        <span> <i class="fa fa-folder-open fa-4x  text-dark"> </i></span> <span class="float-end badge bg-dark rounded-pill"><?php echo $countallfemale?></span>
                     </div>
                 </div>
                 <div class="col-lg-3 p-3">
@@ -58,8 +58,8 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
                         <span>Compuses</span>
                     </div>
                     <div class="card- body shadow">
-                        <span>  <i class="fa fa-graduation-cap fa-4x"></i></span>
-                        <span class="float-end">00</span>
+                        <span>  <i class="fa fa-graduation-cap fa-4x  text-dark"></i></span>
+                        <span class="float-end  text-dark">00</span>
                     </div>
                 </div>
 
@@ -68,8 +68,8 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
                         <span>User</span>
                     </div>
                     <div class="card-body shadow">
-                        <span> <i class="fa fa-user fa-4x"></i></span>
-                        <span class="float-end">00</span>
+                        <span> <i class="fa fa-user fa-4x  text-dark"></i></span>
+                        <span class="float-end  text-dark">00</span>
 
                     </div>
 
@@ -82,7 +82,7 @@ $countallfemale=mysqli_num_rows($queryenrollmentfemale);
 
                     </div>
                     <div class="body shadow">
-                        <span> <i class="fa fa-line-chart fa-4x"></i></span>
+                        <span> <i class="fa fa-line-chart fa-4x  text-dark"></i></span>
                     </div>
                 </div>
             </div>

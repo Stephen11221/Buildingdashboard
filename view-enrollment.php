@@ -43,7 +43,7 @@ while($fetchstudent=mysqli_fetch_array($sqlfetchenrolledtudent))
                                 <li class="list-group-item">phonenumber: <span class="float-end badge bg-warning rounded-pill"><?php echo $phonenumber?></span></li>
                                 <li class="list-group-item">email: <span class="float-end badge bg-warning rounded-pill"></span > <?php echo $email ?></li>
 
-                             </ul>
+                            </ul>
                         </div>
 
                     </div>

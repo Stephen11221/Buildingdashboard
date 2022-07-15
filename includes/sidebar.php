@@ -1,17 +1,17 @@
 <nav>
         <ul>
         <li>
-               <a href="index.php">
+        <a href="index.php">
                   <span><i class="fa fa-home "></i></span>
                
-                <span> <a href="index.php">DashBoard</a> </span>
-                    </a>
-            </li>
+                <span>  DashBoard </span>
+         </a>
+                   </li>
             <li>
-               <a href="index.php">
+            <a href="student.php">
                   <span><i class="fa fa-group "></i></span>
                
-                <span> <a href="student.php">Student </a> </span>
+                <span>Student  </span>
                     </a>
             </li>
             <li>
@@ -26,6 +26,13 @@
                 <span> <i class="fa fa-graduation-cap"></i></spn>
                                 <span>Compus </span>
                  </a>
+
+            </li>
+            <li>
+              <a href="contactus.php">
+              <span><i class="fa fa-envelope"></i></span>
+              <span>Messages</span>
+             </a>
             </li>
         </ul>
 </nav>
