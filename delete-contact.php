@@ -1,11 +1,11 @@
 <?php
 require_once('logics/dbconection.php');
-$delete=mysqli_query($conn,"DELETE FROM contactus WHERE no='".$_GET['id']."' ");
-if($delete)
+$sqldelete=mysqli_query($conn,"DELETE  FROM contactus WHERE no='".$_GET['id']."' ");
+if($sqldelete)
 {
 
     echo 'deleted successfull';
-    header('location:delete-contact.php') ;
+    header('location:contactus.php') ;
 
 }
 else

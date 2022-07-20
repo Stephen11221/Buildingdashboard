@@ -3,12 +3,11 @@
 }
 
 form {
-    width: 1000px;
     padding-top: 0%;
-    padding: 20px;
     margin: 8% auto 0;
     border-style: groove;
     border-radius: 20px;
+    padding: 10px;
 }
 
 body {

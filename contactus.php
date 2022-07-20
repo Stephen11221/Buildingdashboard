@@ -33,11 +33,13 @@ require_once('logics/dbconection.php');
                 <th>Sent on time/date</th>
             </tr>
 
-                <?php while($fetchcontactusrecords= mysqli_fetch_array($sql)){ ?>
+                <?php 
+               $count=1;
+               while($fetchcontactusrecords= mysqli_fetch_array($sql)){ ?>
                     
                     
                 <tr>
-                    <td><?php echo $fetchcontactusrecords['no'] ?></td>
+                    <td><?php echo $count ?></td>
                     <td><?php echo $fetchcontactusrecords['firstname'] ?></td>
                     <td><?php echo $fetchcontactusrecords['lastname'] ?></td>
                     <td><?php echo $fetchcontactusrecords['email'] ?></td>
@@ -47,13 +49,13 @@ require_once('logics/dbconection.php');
                     <td>
                         <a href="edit-contactus.php?id=<?php echo $fetchcontactusrecords['no']?>" class="btn btn-success"><span><i class="fa fa-edit "></i></span></a>
                         <a href="viewcontactus.php?id=<?php echo $fetchcontactusrecords['no']?>" class="btn btn-warning"><span><i class="fa fa-eye"></i></span></a>
-                        <a href="delete-contact.php>?id=<?php echo $fetchcontactusrecords['no']?>" class="btn btn-danger"><span><i class="fa fa-trash"></i></span></a>
+                        <a href="delete-contact.php?id=<?php echo $fetchcontactusrecords['no']?>" class="btn btn-danger"><span><i class="fa fa-trash"></i></span></a>
                     </td>
                 
                     
  
                 </tr>
-               <?php }?>
+               <?php $count++;}?>
             </table>
         
 

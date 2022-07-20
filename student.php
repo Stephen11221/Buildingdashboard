@@ -19,7 +19,9 @@ require_once('logics/dbconection.php');
     <main class="main-content">
         <div class="card-header shadow bg-dark text-center mt-1 text-white">
             <span> <span>  <i class="fa fa-group text-white"></i></span> Student </span>
-
+        
+        <button type="button" class="btn btn-primary btn-sm float-end"s data-bs-toggle="modal" data-bs-target="#modal"><i class="fa fa-plus"></i> </button>
+            
         </div>
         <div class="card-body shadow  pt-3 ">
 
@@ -37,11 +39,13 @@ require_once('logics/dbconection.php');
 
                 </tr>
 
-                <?php while($fetchenrollmentrecords= mysqli_fetch_array($sql)){ ?>
+                <?php
+                    $count=1;
+                while($fetchenrollmentrecords= mysqli_fetch_array($sql)){ ?>
                     
                     
                 <tr>
-                    <td><?php echo $fetchenrollmentrecords['no'] ?></td>
+                    <td><?php echo $count ?></td>
                     <td><?php echo $fetchenrollmentrecords['fullname'] ?></td>
                     <td><?php echo $fetchenrollmentrecords['phonenumber'] ?></td>
                     <td><?php echo $fetchenrollmentrecords['email'] ?></td>
@@ -63,12 +67,12 @@ require_once('logics/dbconection.php');
                     
  
                 </tr>
-               <?php }?>
+               <?php $count++; }?>
             </table>
         </div>
 
-
     </main>
+        <?php require_once( "addstudent.php")?>
 
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>

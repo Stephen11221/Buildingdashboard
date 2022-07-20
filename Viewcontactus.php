@@ -33,7 +33,7 @@
     </div>
     <main class="main-content">
         <div class="row pt-5 ">
-            <div class="col-lg-6 ">
+            <div class="col-lg-12">
                 <div class="card ">
                     <div class="card-header bg-primary">
                         <span>contact us information</span>

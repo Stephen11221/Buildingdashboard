@@ -30,9 +30,15 @@
             </li>
             <li>
               <a href="contactus.php">
-              <span><i class="fa fa-envelope"></i></span>
-              <span>Messages</span>
+              <span><i class="fa fa-comments-o"></i></span>
+              <span>Comments</span>
              </a>
+            </li>
+            <li>
+              <a href="subscribers.php">
+                <span><i class="fa fa-envelope"></i></span>
+                <span>Subscriber</span>
+              </a>
             </li>
         </ul>
 </nav>
